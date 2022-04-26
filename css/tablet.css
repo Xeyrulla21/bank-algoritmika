@@ -1,13 +1,9 @@
-nav {
-    width: 100%;
-}
-
 nav a {
     visibility: visible;
     text-decoration: none;
-    padding-right: 20px;
     color: #959BA4;
     display: inline-block;
+    padding: 0px 5px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     transition: 0.2s ease;
@@ -19,7 +15,7 @@ nav a {
 }
 
 nav a:hover {
-    color: black;
+    color: #484f58;
 }
 
 .nav_bank {
@@ -55,16 +51,7 @@ nav a:hover {
     line-height: 25px;
     margin-top: 50px;
     margin-bottom: -50px;
-    text-align: center;
-}
-
-section {
-    margin-left: 120px;
-}
-
-.currencies-section {
-    position: relative;
-    left: -60px;
+    margin-left: 27%;
 }
 
 .have {
@@ -143,7 +130,6 @@ section {
 
 .exchange-form input {
     border: none;
-    padding-left: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 25px;
@@ -154,8 +140,4 @@ section {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 15px;
-}
-
-.left_text, .right_text {
-    color: #C6C6C6;
 }

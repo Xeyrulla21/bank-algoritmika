@@ -54,22 +54,18 @@ nav a {
 }
 
 .login:hover {
-    background-color: black;
+    background-color: #833AE0;
     color: white;
 }
 
-.currency {
+.valyuta {
     font-size: 20px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     line-height: 25px;
     margin-top: 50px;
-    margin-bottom: -50px;
-    text-align: center;
-}
-
-label {
-    font-size: 12px;
+    margin-bottom: -100px;
+    margin-left: 20%;
 }
 
 .have {
@@ -103,7 +99,7 @@ label {
     color: #C6C6C6;
     display: grid;
     place-items: center;
-    width: 40px;
+    width: 63px;
     height: 20px;
     border: 1px solid #C6C6C6;
     border-left: none;
@@ -130,11 +126,11 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
 }
 
 .currencies-section section {
-    width: 160px;
+    width: 250px;
+    margin-top: 50px;
 }
 
 .exchange-form {
@@ -142,14 +138,13 @@ label {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    height: 80px;
+    height: 140px;
     justify-content: space-between;
     border: 1px solid #C6C6C6;
 }
 
 .exchange-form input {
     border: none;
-    padding-left: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -160,8 +155,4 @@ label {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 12px;
-}
-
-.left_text, .right_text {
-    color: #C6C6C6;
 }
