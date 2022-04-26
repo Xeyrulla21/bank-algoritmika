@@ -137,6 +137,7 @@ label {
 
 .exchange-form input {
     border: none;
+    padding-left: 10px;
     border-radius: 10px;
     font-style: normal;
     font-weight: 700;
