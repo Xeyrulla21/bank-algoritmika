@@ -3,7 +3,7 @@ nav a {
     text-decoration: none;
     color: #959BA4;
     display: inline-block;
-    padding: 0px 5px;
+    padding-right: -5px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     transition: 0.2s ease;
@@ -15,7 +15,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #484f58;
+    color: black;
 }
 
 .nav_bank {
@@ -45,7 +45,7 @@ nav a:hover {
 }
 
 .currency {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     line-height: 25px;
