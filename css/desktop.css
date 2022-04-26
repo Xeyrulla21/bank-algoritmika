@@ -53,11 +53,11 @@ nav a:hover {
     font-size: 45px;
     font-weight: 700;
     line-height: 42px;
-    margin: 90px 0 0 300px;
+    margin: 90px 0 0 -175px;
 }
 
 section {
-    margin-left: 120px;
+    margin-left: 200px;
 }
 
 .have {
@@ -73,6 +73,10 @@ section {
     visibility: hidden;
     position: absolute;
     z-index: -1;
+}
+
+label {
+    font-size: 16px;
 }
 
 .currencies {
@@ -133,6 +137,7 @@ section {
 
 .exchange-form input {
     border: none;
+    border-radius: 10px;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;

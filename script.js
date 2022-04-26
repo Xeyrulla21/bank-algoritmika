@@ -27,6 +27,9 @@ const exchange = async(value, variables) => {
 
 
     let result = parseInt(value) * data;
+    if(isNaN(result)) {
+        result = 0;
+    }
 
     return {
         result: result,

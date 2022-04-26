@@ -1,9 +1,13 @@
+nav {
+    width: 100%;
+}
+
 nav a {
     visibility: visible;
     text-decoration: none;
+    padding-right: 20px;
     color: #959BA4;
     display: inline-block;
-    padding: 0px 5px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     transition: 0.2s ease;
@@ -15,7 +19,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #484f58;
+    color: black;
 }
 
 .nav_bank {
@@ -26,7 +30,7 @@ nav a:hover {
     width: 10%;
 }
 
-.giris {
+.login {
     border: 1px solid white;
     background-color: white;
     color: black;
@@ -39,19 +43,28 @@ nav a:hover {
     cursor: pointer;
 }
 
-.giris:hover {
-    background-color: black;
+.login:hover {
+    background-color: #833AE0;
     color: white;
 }
 
-.valyuta {
+.currency {
     font-size: 25px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     line-height: 25px;
     margin-top: 50px;
     margin-bottom: -50px;
-    margin-left: 27%;
+    text-align: center;
+}
+
+section {
+    margin-left: 120px;
+}
+
+.currencies-section {
+    position: relative;
+    left: -60px;
 }
 
 .have {
@@ -140,4 +153,8 @@ nav a:hover {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 15px;
+}
+
+.left_text, .right_text {
+    color: #C6C6C6;
 }
