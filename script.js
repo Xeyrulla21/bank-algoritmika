@@ -1,3 +1,5 @@
+const leftValue = document.querySelector('.left_value');
+const rightValue = document.querySelector('.right_value');
 const currencies = [
     'RUB', 'USD', 'EUR', 'GBP'
 ];
@@ -8,7 +10,7 @@ const formatter = (value, seperater) => {
 
 const uri = 'https://api.exchangerate.host/latest';
 
-const exchange = async(value, variables) => {
+const exchange = async (value, variables) => {
 
     let url = new URL(uri);
 
@@ -27,7 +29,7 @@ const exchange = async(value, variables) => {
 
 
     let result = parseInt(value) * data;
-    if(isNaN(result)) {
+    if (isNaN(result)) {
         result = 0;
     }
 
@@ -38,7 +40,7 @@ const exchange = async(value, variables) => {
 }
 
 const inp = document.querySelector('input[type="text"]');
-inp.addEventListener('keyup', function(e) {
+inp.addEventListener('keyup', function (e) {
     const val = parseFloat(e.target.value.replaceAll(' ', ''));
     const formatter = new Intl.NumberFormat(undefined, { maximumFractionDigits: 8 });
     if (val) e.target.value = formatter.format(val).replaceAll(',', ' ');
@@ -62,14 +64,14 @@ async function getCurrency() {
     document.querySelector('.left_text').innerHTML = `1 ${currencies[0]} = ${result.currency.toFixed(4)} ${currencies[1]}`;
 }
 
-inp.addEventListener('input', async(e) => {
+inp.addEventListener('input', async (e) => {
     getCurrency();
 });
 
 let radios = document.querySelectorAll('input[type="radio"]');
 
 [...radios].forEach(radio => {
-    radio.addEventListener('change', async(e) => {
+    radio.addEventListener('change', async (e) => {
         getCurrency();
     });
 });
@@ -81,6 +83,6 @@ if ("createEvent" in document) {
 } else
     element.fireEvent("onchange");
 
-window.addEventListener('load', async() => {
+window.addEventListener('load', async () => {
     await getCurrency();
 })
